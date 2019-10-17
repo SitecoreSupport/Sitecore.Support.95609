@@ -34,8 +34,8 @@
                     }
                     else
                     {
-                        #region Original code
-                        result.AddBrokenLink(base.InternalPath);
+                        #region Modified code
+                        result.AddBrokenLink(base.TargetID.ToString());
                         #endregion
                     }
                 }
@@ -49,8 +49,8 @@
                 }
                 else
                 {
-                    #region Original code
-                    result.AddBrokenLink(base.MediaPath);
+                    #region Modified code
+                    result.AddBrokenLink(base.TargetID.ToString());
                     #endregion
                 }
             }
